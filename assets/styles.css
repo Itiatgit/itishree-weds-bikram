@@ -2,3 +2,39 @@
 @media(max-width:900px){.hero{gap:28px;padding-inline:4vw}.hero h1{font-size:clamp(3.5rem,8vw,5.8rem)}.hero-art{max-width:370px}.arch-frame{height:430px}.landmark-grid{grid-template-columns:repeat(2,1fr)}.event-card{padding:23px}}
 @media(max-width:680px){html{scroll-padding-top:82px}.topline{height:32px;font-size:.7rem}.site-header{height:76px;padding:0 17px}.brand-mark{width:42px;height:42px}.brand-text{font-size:.76rem}.menu-toggle{display:block}.nav{display:none;position:absolute;top:76px;left:0;right:0;background:#5b2530;padding:18px 22px 24px;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 15px 25px #28141b2b}.nav.open{display:flex}.nav a{padding:12px 5px;border-bottom:1px solid #ffffff1c}.nav .nav-rsvp{text-align:center;margin-top:12px;border:1px solid #c8a56d}.hero{display:flex;flex-direction:column;min-height:0;padding:48px 18px 64px;gap:30px}.hero-copy{width:100%}.hero h1{font-size:clamp(3.45rem,16vw,5rem)}.hero-subtitle{font-size:1rem}.hero-art{width:min(88%,330px);padding:9px}.arch-frame{height:auto;aspect-ratio:326/634}.arch-frame img{object-fit:cover;object-position:center 25%}.hero-actions{gap:9px;flex-wrap:wrap}.button{padding:12px 17px;font-size:.73rem}.scroll-cue{bottom:17px}.section{padding:65px 18px}.section-heading{margin-bottom:30px}.section-heading h2,.rsvp-section h2{font-size:2.6rem}.family-grid{grid-template-columns:1fr;gap:10px}.ampersand{font-size:2rem}.family-card{padding:28px 18px}.event-grid,.travel-grid{grid-template-columns:1fr}.event-card{padding:24px}.event-description{min-height:0}.city-feature{grid-template-columns:1fr}.city-feature-image{min-height:210px}.city-feature-copy{padding:27px}.city-feature-copy h3{font-size:1.9rem}.landmark-grid{grid-template-columns:1fr 1fr;gap:10px}.landmark-card img{height:118px}.landmark-card div{padding:12px}.landmark-card h3{font-size:1.02rem}.landmark-card p{font-size:.7rem;min-height:95px}.travel-card p:not(.eyebrow){min-height:0}.contacts{gap:10px 15px}.rsvp-section{padding-block:70px}}
 @media(max-width:380px){.landmark-grid{grid-template-columns:1fr}.landmark-card img{height:180px}.landmark-card p{min-height:0}.hero-date{width:190px}}
+
+/* Soft pastel wedding palette and new invitation details */
+:root{--ink:#40383b;--wine:#765361;--wine2:#896674;--gold:#b68a78;--sand:#eadcdd;--paper:#fbf7f7;--muted:#82777a;--green:#839889;--yellow:#c9ad76;--rose:#bf8791}
+html{scroll-padding-top:110px}
+.blessings{background:#fffaf8;border-bottom:1px solid #eadbdd;color:var(--wine);text-align:center}
+.blessing{min-height:36px;margin:0;display:flex;align-items:center;justify-content:center;gap:12px}
+.blessing-jagannath{font:500 1rem var(--serif);letter-spacing:.04em}
+.blessing-jagannath img{width:61px;height:38px;object-fit:contain}
+.blessing-ganesha{min-height:31px;border-top:1px solid #f0e6e5;font:500 .78rem var(--serif);letter-spacing:.16em}
+.blessing-ganesha img{width:25px;height:29px;object-fit:contain}
+.site-header{background:#f4e9eb;color:#59434e;border-bottom:1px solid #e4d1d5;box-shadow:0 5px 22px #6f4e5710}
+.brand-mark{border-color:#c999a4;color:#896270}.brand-mark span{color:#a77c88}
+.brand-text i,.brand-text small{color:#967984}
+.nav a{color:#59434e}.nav a:hover{color:#a86f7c}.nav .nav-rsvp{border-color:#c999a4}
+.menu-toggle{border-color:#c999a4;color:#765361}
+.hero{background:radial-gradient(ellipse at 15% 20%,#f0e4e4 0,transparent 42%),linear-gradient(120deg,#f8f0ee,#fffaf8 52%,#eee8e4)}
+.hero:before{background-image:linear-gradient(45deg,transparent 49.6%,#ac7c780a 50%,transparent 50.4%)}
+.hero-art{border-color:#dfc8c7;background:#fffaf8;box-shadow:0 20px 55px #72525b14}
+.arch-frame{border-color:#d5b7ad;background:#f0e2dc}
+.button-dark{background:var(--wine);color:#fffaf8}.button-light{border-color:#c999a4;color:var(--wine);background:#fffaf8}
+.family-section,.city-section{background:#fffaf8}
+.family-card{border-color:#ead7d6;background:linear-gradient(145deg,#fffdfc,#f7eeee)}
+.events-section{background:#f4eeee}.event-card{background:#fffaf9;border-color:#ead7d6}
+.city-feature{background:#f2e9e7;border-color:#ead7d6}.city-feature-image{background:linear-gradient(135deg,#e7d5ce,#f8eeea)}
+.landmark-card{background:#fffdfc;border-color:#eadbdd}.landmark-card img{background:#eee5e4}
+.travel-section{background:#f2eeee}.travel-card{background:#fffaf8;border-color:#e8d8d8}.travel-note{background:#e9dfdf;color:#62575a}
+.rsvp-section{background:linear-gradient(145deg,#e9d8dc,#e2d7dd);color:#51434a}
+.rsvp-section .eyebrow{color:#92707d}.rsvp-section h2{color:#604652}.rsvp-section>p:not(.eyebrow){color:#64545b}.rsvp-section .button{background:#765361;color:#fffaf8}
+.contacts{color:#62525a}.contacts a{color:#765361}
+footer{background:#735864;color:#fff8f5}footer small{color:#f1d6d5}.footer-mark{color:#f0d8d2}
+.countdown-section{padding:8px max(6vw,26px) 32px;background:#f8f1ef}
+.countdown-card{max-width:1120px;margin:auto;padding:23px 34px;display:flex;align-items:center;justify-content:space-between;gap:28px;background:linear-gradient(110deg,#fffaf6,#f8eeee);border:1px solid #e7d1ca;box-shadow:0 12px 30px #73565b0b}
+.countdown-copy .eyebrow{margin-bottom:5px}.countdown-copy h2{margin:0;color:var(--wine);font:italic 500 clamp(1.9rem,4vw,3rem)/1.15 var(--serif)}.countdown-copy>p:last-child{margin:3px 0 0;color:var(--muted);font:italic .95rem var(--serif)}
+.countdown{display:flex;align-items:center;gap:clamp(10px,2.5vw,30px);padding-left:28px;border-left:1px solid #dfc2bc}
+.countdown>div{min-width:54px;text-align:center}.countdown strong{display:block;color:var(--wine);font:500 clamp(1.7rem,4vw,2.8rem)/1 var(--serif);font-variant-numeric:tabular-nums}.countdown span{display:block;margin-top:6px;color:var(--muted);font-size:.65rem;letter-spacing:.07em;text-transform:uppercase}.countdown-complete{margin:0;color:var(--wine);font:italic 1.4rem var(--serif)}
+@media(max-width:680px){html{scroll-padding-top:90px}.blessing-jagannath{font-size:.86rem}.blessing-jagannath img{width:48px;height:32px}.blessing-ganesha{font-size:.68rem}.site-header{background:#f4e9eb}.nav{background:#f4e9eb}.nav a{color:#59434e;border-bottom-color:#76536122}.nav .nav-rsvp{border-color:#c999a4}.countdown-section{padding:4px 16px 25px}.countdown-card{padding:22px 16px;display:block;text-align:center}.countdown{justify-content:center;gap:clamp(8px,4vw,20px);margin-top:19px;padding:15px 0 0;border-left:0;border-top:1px solid #dfc2bc}.countdown>div{min-width:46px}.arch-frame{aspect-ratio:2/3}.hero-art{width:min(88%,330px)}}

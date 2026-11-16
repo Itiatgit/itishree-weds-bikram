@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="18" fill="#f8eff0"/>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#c58f9b" stroke-width="1.5"/>
+  <path d="M15 43c6 8 13 11 17 11m17-11C43 51 36 54 32 54M15 43l-6-6m7 7 0-8m0 8-8-1m41 0 6-6m-7 7 0-8m0 8 8-1" fill="none" stroke="#c58f9b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="39" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-weight="600" fill="#80515f">IB</text>
+</svg>

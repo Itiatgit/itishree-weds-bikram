@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 56" role="img" aria-labelledby="title">
+  <title id="title">Lord Ganesha</title>
+  <path d="M24 3c-3 4-8 5-11 9l-5 10 5 3-3 7 6 2-1 7 9 11 9-11-1-7 6-2-3-7 5-3-5-10c-3-4-8-5-11-9z" fill="#f1d7a8" stroke="#a56c42" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M15 22c3-5 6-7 9-7s6 2 9 7m-18 0c2 7 5 10 9 10s7-3 9-10" fill="none" stroke="#a56c42" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="19" cy="23" r="2" fill="#744a42"/><circle cx="29" cy="23" r="2" fill="#744a42"/>
+  <path d="M24 26c-1 6-7 8-4 13 2 3 7 2 8-1" fill="none" stroke="#b76f52" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 6v7m-13 8-5-2m30 2 5-2" stroke="#c69555" stroke-width="2" stroke-linecap="round"/>
+</svg>
