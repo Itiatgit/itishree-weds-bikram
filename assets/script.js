@@ -1,6 +1,16 @@
 const menuButton=document.querySelector('.menu-toggle');
 const nav=document.querySelector('.nav');
-if(menuButton&&nav){menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.textContent=open?'×':'☰';});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='☰';}));}
+if(menuButton&&nav){
+  const setMenuOpen=open=>{
+    nav.classList.toggle('open',open);
+    menuButton.setAttribute('aria-expanded',String(open));
+    menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+    menuButton.textContent=open?'×':'☰';
+  };
+  menuButton.addEventListener('click',()=>setMenuOpen(!nav.classList.contains('open')));
+  nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setMenuOpen(false)));
+  document.addEventListener('keydown',event=>{if(event.key==='Escape')setMenuOpen(false);});
+}
 
 const countdown=document.querySelector('#wedding-countdown');
 if(countdown){

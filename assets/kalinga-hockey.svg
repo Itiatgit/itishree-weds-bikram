@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Kalinga Stadium hockey illustration</title>
+  <desc id="desc">A pastel illustration of a hockey field, stadium stands and floodlights.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e2eef0"/><stop offset="1" stop-color="#f6ece3"/></linearGradient>
+    <linearGradient id="turf" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#79a9a4"/><stop offset="1" stop-color="#527f84"/></linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="26" fill="url(#sky)"/>
+  <circle cx="505" cy="82" r="34" fill="#f5d8bc" opacity=".8"/>
+  <path d="M82 210 320 104l239 106v83H82z" fill="#c8d9d8"/>
+  <path d="M98 207 320 122l221 85M108 226l212-82 212 82M115 244l205-79 205 79" fill="none" stroke="#9bb7b4" stroke-width="13" stroke-linecap="round"/>
+  <path d="M72 259 320 178l248 81v29H72z" fill="#e9d1c4"/>
+  <path d="M72 282 320 205l248 77v116H72z" fill="url(#turf)"/>
+  <path d="m105 293 215-66 215 66v81H105z" fill="none" stroke="#eff7ee" stroke-width="3"/>
+  <path d="M320 226v162m-117-125c16 50 16 87 0 137m234-137c-16 50-16 87 0 137" fill="none" stroke="#eff7ee" stroke-width="2.5"/>
+  <circle cx="320" cy="307" r="28" fill="none" stroke="#eff7ee" stroke-width="2.5"/>
+  <path d="M181 274v42h-42v-29m320-13v42h42v-29" fill="none" stroke="#f6eee1" stroke-width="4"/>
+  <path d="M112 243 103 92m10 150 52-134m360 135 11-151m-10 151-52-134" fill="none" stroke="#678890" stroke-width="5" stroke-linecap="round"/>
+  <path d="M89 88h30m-6 0h42m308 0h30m-6 0h42" stroke="#f9ead2" stroke-width="12" stroke-linecap="round"/>
+  <path d="M242 385h156" stroke="#e8d6bd" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="319" cy="371" r="4" fill="#f7d3ad"/>
+</svg>
