@@ -1,17 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-palette="royal">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f3eee2">
+  <meta name="theme-color" content="#f4f0e7">
   <meta name="description" content="Itishree Weds Bikram. Join our families for a Bhubaneswar wedding, where old temple lanes meet the spirit of a modern Odisha.">
   <title>Itishree Weds Bikram | Bhubaneswar Wedding</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="apple-touch-icon" href="assets/ib-monogram.svg">
+  <script>try{const savedPalette=localStorage.getItem('itishree-color-palette');if(['royal','powder','midnight'].includes(savedPalette))document.documentElement.dataset.palette=savedPalette;}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+Oriya:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/palettes.css">
 </head>
 <body>
   <div class="blessing-bar" aria-label="Wedding blessings">
@@ -22,6 +24,7 @@
 
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Itishree Weds Bikram, home"><img src="assets/ib-monogram.svg" alt="" class="brand-logo"><span class="brand-copy">ITISHREE <i>WEDS</i> BIKRAM<small>BHUBANESWAR · 2026</small></span></a>
+    <div class="palette-switcher" role="group" aria-label="Preview website color palettes"><span class="palette-label">Try a palette</span><button type="button" class="palette-choice" data-palette-choice="royal" aria-label="Royal blue and gold" aria-pressed="true" title="Royal blue and gold"><span></span></button><button type="button" class="palette-choice" data-palette-choice="powder" aria-label="Powder blue and champagne" aria-pressed="false" title="Powder blue and champagne"><span></span></button><button type="button" class="palette-choice" data-palette-choice="midnight" aria-label="Midnight blue and gold" aria-pressed="false" title="Midnight blue and gold"><span></span></button></div>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Main navigation">
       <a href="#story">Our story</a><a href="#city">City notes</a><a href="#celebrations">Celebrations</a><a href="#families">Our families</a><a href="#travel">Travel</a><a class="nav-rsvp" href="#rsvp">RSVP</a>

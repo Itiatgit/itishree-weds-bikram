@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
   <title id="title">Itishree and Bikram monogram</title>
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M38 109A91 91 0 0 1 105 33M151 33a91 91 0 0 1 67 76" stroke="#c88d83" stroke-width="5"/>
-    <path d="M48 168c17 35 43 53 76 58M208 168c-17 35-43 53-76 58" stroke="#9fb7a9" stroke-width="3.5"/>
-    <path d="M48 168 31 153m18 17-2-25m2 25-24-4m34 19-23-7m24 10-7-21m7 21-23 2m39 11-22-2m23 6-11-19m11 19-21 8m39 2-19-7m20 12-14-18m14 18-18 13" stroke="#9fb7a9" stroke-width="3"/>
-    <path d="m208 168 17-15m-18 17 2-25m-2 25 24-4m-34 19 23-7m-24 10 7-21m-7 21 23 2m-39 11 22-2m-23 6 11-19m-11 19 21 8m-39 2 19-7m-20 12 14-18m-14 18 18 13" stroke="#9fb7a9" stroke-width="3"/>
+    <path d="M38 109A91 91 0 0 1 105 33M151 33a91 91 0 0 1 67 76" stroke="#b58e4c" stroke-width="5"/>
+    <path d="M48 168c17 35 43 53 76 58M208 168c-17 35-43 53-76 58" stroke="#4d6f95" stroke-width="3.5"/>
+    <path d="M48 168 31 153m18 17-2-25m2 25-24-4m34 19-23-7m24 10-7-21m7 21-23 2m39 11-22-2m23 6-11-19m11 19-21 8m39 2-19-7m20 12-14-18m14 18-18 13" stroke="#4d6f95" stroke-width="3"/>
+    <path d="m208 168 17-15m-18 17 2-25m-2 25 24-4m-34 19 23-7m-24 10 7-21m-7 21 23 2m-39 11 22-2m-23 6 11-19m-11 19 21 8m-39 2 19-7m-20 12 14-18m-14 18 18 13" stroke="#4d6f95" stroke-width="3"/>
   </g>
-  <text x="95" y="151" text-anchor="middle" font-family="Georgia,serif" font-size="106" fill="#c88d83">I</text>
-  <text x="145" y="156" text-anchor="middle" font-family="Georgia,serif" font-size="104" fill="#879f96">B</text>
-  <circle cx="44" cy="165" r="4.5" fill="#c88d83"/><circle cx="212" cy="165" r="4.5" fill="#c88d83"/>
+  <text x="95" y="151" text-anchor="middle" font-family="Georgia,serif" font-size="106" fill="#b58e4c">I</text>
+  <text x="145" y="156" text-anchor="middle" font-family="Georgia,serif" font-size="104" fill="#4d6f95">B</text>
+  <circle cx="44" cy="165" r="4.5" fill="#b58e4c"/><circle cx="212" cy="165" r="4.5" fill="#b58e4c"/>
 </svg>

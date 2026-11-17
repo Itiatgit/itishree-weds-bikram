@@ -1,0 +1,185 @@
+/* Temporary palette previews. Remove the switcher and keep one block after choosing. */
+:root[data-palette="royal"] {
+  --ink: #29384d;
+  --deep: #19385d;
+  --deep-soft: #4d6f95;
+  --rust: #876334;
+  --coral: #b58e4c;
+  --gold: #c3a462;
+  --paper: #f4f0e7;
+  --cream: #fcfaf5;
+  --muted: #667487;
+  --line: #d9d0c0;
+  --surface-warm: #f8f4eb;
+  --surface-blue: #e8edf4;
+  --surface-blue-strong: #dee6f1;
+  --surface-cool: #f1f4f8;
+  --surface-gold: #f6f0e2;
+  --surface-control: #eceff4;
+  --header-bg: rgba(244, 240, 231, .96);
+  --footer-bg: #1b3556;
+  --on-dark: #f9f5ea;
+  --on-dark-muted: #dce5ef;
+  --contact-bg: #f0f4f9;
+  --contact-border: #cdd8e5;
+  --line-strong: #c9b98f;
+  --gold-pale: #e1d1ad;
+  --hero-base: #e9e6e1;
+  --hero-wash-rgb: 244, 240, 231;
+  --deep-rgb: 25, 56, 93;
+  --gold-rgb: 181, 142, 76;
+  --deep-filter: #19385d;
+}
+
+:root[data-palette="powder"] {
+  --ink: #344357;
+  --deep: #435e80;
+  --deep-soft: #6c86a4;
+  --rust: #907749;
+  --coral: #b89a61;
+  --gold: #cbb27c;
+  --paper: #f1f4f8;
+  --cream: #fcfdff;
+  --muted: #6b788a;
+  --line: #d2dce8;
+  --surface-warm: #f5f6f8;
+  --surface-blue: #e4ecf5;
+  --surface-blue-strong: #d9e4f0;
+  --surface-cool: #f1f5fa;
+  --surface-gold: #f6f1e6;
+  --surface-control: #e8eef5;
+  --header-bg: rgba(241, 244, 248, .96);
+  --footer-bg: #344c6b;
+  --on-dark: #fbfcff;
+  --on-dark-muted: #e0e8f1;
+  --contact-bg: #eef3f8;
+  --contact-border: #c8d6e5;
+  --line-strong: #bfcaD7;
+  --gold-pale: #e4d6b8;
+  --hero-base: #e5ebf2;
+  --hero-wash-rgb: 241, 244, 248;
+  --deep-rgb: 67, 94, 128;
+  --gold-rgb: 184, 154, 97;
+  --deep-filter: #435e80;
+}
+
+:root[data-palette="midnight"] {
+  --ink: #25344b;
+  --deep: #152844;
+  --deep-soft: #49668c;
+  --rust: #886b38;
+  --coral: #c2a15c;
+  --gold: #d0ad66;
+  --paper: #f3f0e8;
+  --cream: #fffcf6;
+  --muted: #68758a;
+  --line: #d7cfbe;
+  --surface-warm: #f8f5ed;
+  --surface-blue: #e5eaf2;
+  --surface-blue-strong: #d9e1ed;
+  --surface-cool: #f0f3f8;
+  --surface-gold: #f5efdf;
+  --surface-control: #e7ebf1;
+  --header-bg: rgba(243, 240, 232, .96);
+  --footer-bg: #142741;
+  --on-dark: #fbf7ed;
+  --on-dark-muted: #e0e6ef;
+  --contact-bg: #edf1f7;
+  --contact-border: #c9d2df;
+  --line-strong: #cbb77f;
+  --gold-pale: #e5d6b1;
+  --hero-base: #e5e8ec;
+  --hero-wash-rgb: 243, 240, 232;
+  --deep-rgb: 21, 40, 68;
+  --gold-rgb: 194, 161, 92;
+  --deep-filter: #152844;
+}
+
+html[data-palette] body { background: var(--paper); color: var(--ink); }
+html[data-palette] .blessing-bar { background: var(--surface-warm); border-color: var(--line); color: var(--deep); }
+html[data-palette] .site-header { background: var(--header-bg); border-color: var(--line); }
+html[data-palette] .brand,html[data-palette] .nav .nav-rsvp,html[data-palette] .menu-toggle { color: var(--deep); }
+html[data-palette] .brand-copy small,html[data-palette] .nav a { color: var(--muted); }
+html[data-palette] .nav a:hover { color: var(--gold); }
+html[data-palette] .nav .nav-rsvp,html[data-palette] .menu-toggle { border-color: var(--gold); }
+html[data-palette] .hero { background: var(--hero-base); }
+html[data-palette] .hero-wash { background: linear-gradient(90deg, rgba(var(--hero-wash-rgb),1) 0%, rgba(var(--hero-wash-rgb),.93) 20%, rgba(var(--hero-wash-rgb),.74) 38%, rgba(var(--hero-wash-rgb),.12) 67%, transparent 100%), linear-gradient(0deg, rgba(var(--deep-rgb),.12), transparent 28%); }
+html[data-palette] .hero-overline,html[data-palette] .countdown-zone,html[data-palette] .landmark-caption a,html[data-palette] .travel-links b { color: var(--rust); }
+html[data-palette] .hero-kicker,html[data-palette] .hero-date,html[data-palette] .hero-place,html[data-palette] .story-text p,html[data-palette] .rsvp-section > .wrap > p:not(.eyebrow) { color: var(--muted); }
+html[data-palette] .hero-overline i,html[data-palette] .scroll-cue { background: var(--gold); }
+html[data-palette] .hero-side-note b { color: var(--gold); }
+html[data-palette] .scroll-cue span { background: transparent; border-color: var(--gold); }
+html[data-palette] .hero-side-note { color: var(--deep); background: var(--surface-warm); border-color: var(--gold-pale); }
+html[data-palette] .button-primary,html[data-palette] .music-toggle { background: var(--deep); color: var(--on-dark); }
+html[data-palette] .button-text { color: var(--deep); }
+html[data-palette] .countdown-section,html[data-palette] .families-section { background: var(--cream); }
+html[data-palette] .countdown-bar,html[data-palette] .story-label,html[data-palette] .landmark-controls,html[data-palette] .event-venue,html[data-palette] .travel-links,html[data-palette] .travel-links > a { border-color: var(--line); }
+html[data-palette] .countdown-symbol { border-color: var(--gold); color: var(--rust); }
+html[data-palette] .countdown strong,html[data-palette] .countdown-caption h2,html[data-palette] .countdown-complete { color: var(--deep); }
+html[data-palette] .countdown span,html[data-palette] .story-route-mark,html[data-palette] .city-footnote,html[data-palette] .event-marker time small { color: var(--muted); }
+html[data-palette] .story-section,html[data-palette] .events-section { background: var(--surface-blue); }
+html[data-palette] .story-route-mark i,html[data-palette] .odia-line i { color: var(--gold); }
+html[data-palette] .odia-line { color: var(--deep-soft); }
+html[data-palette] .city-ribbon { background: var(--surface-warm); border-color: var(--line); }
+html[data-palette] .city-ribbon::after { border-color: rgba(var(--gold-rgb),.24); box-shadow: 0 0 0 20px rgba(var(--gold-rgb),.1), 0 0 0 40px rgba(var(--gold-rgb),.06); }
+html[data-palette] .landmark-carousel { background: var(--cream); border-color: var(--line); }
+html[data-palette] .landmark-arrow { border-color: var(--line-strong); color: var(--deep); }
+html[data-palette] .landmark-arrow:hover,html[data-palette] .landmark-arrow:focus-visible { background: var(--surface-control); }
+html[data-palette] .landmark-dot { background: var(--gold-pale); }
+html[data-palette] .landmark-dot[aria-current="true"] { background: var(--gold); box-shadow: 0 0 0 3px rgba(var(--gold-rgb),.2); }
+html[data-palette] .family-card { border-color: var(--line); }
+html[data-palette] .family-card .eyebrow,html[data-palette] .family-card strong,html[data-palette] .family-card small,html[data-palette] .family-card > p:not(.eyebrow) { color: var(--muted); }
+html[data-palette] .family-divider,html[data-palette] .family-card h3 { color: var(--deep); }
+html[data-palette] .family-divider span { background: var(--gold-pale); }
+html[data-palette] .events-heading > p,html[data-palette] .event-copy,html[data-palette] .event-venue address { color: var(--muted); }
+html[data-palette] .event-route::before { background-image: repeating-linear-gradient(90deg, var(--line-strong) 0 5px, transparent 5px 11px); }
+html[data-palette] .event-marker > span { background: var(--cream); border-color: var(--gold); color: var(--rust); }
+html[data-palette] .haldi-stop .event-marker > span,html[data-palette] .wedding-stop .event-marker > span { border-color: var(--gold); color: var(--rust); }
+html[data-palette] .event-marker time { background: var(--surface-blue); color: var(--deep); }
+html[data-palette] .event-card { background: var(--cream); border-top-color: var(--gold); }
+html[data-palette] .haldi-stop .event-card { background: var(--surface-gold); border-color: var(--gold); }
+html[data-palette] .wedding-stop .event-card { background: var(--surface-cool); border-color: var(--deep-soft); }
+html[data-palette] .event-time,html[data-palette] .event-venue > span { color: var(--rust); }
+html[data-palette] .haldi-stop .event-time,html[data-palette] .wedding-stop .event-time { color: var(--rust); }
+html[data-palette] .event-card h3,html[data-palette] .travel-links strong { color: var(--deep); }
+html[data-palette] .event-subtitle,html[data-palette] .event-venue a,html[data-palette] .travel-links > a > span { color: var(--gold); }
+html[data-palette] .travel-section { background: var(--surface-warm); }
+html[data-palette] .travel-intro > p:last-child,html[data-palette] .travel-links small { color: var(--muted); }
+html[data-palette] .rsvp-section { background: var(--surface-blue-strong); }
+html[data-palette] .contacts,html[data-palette] .contacts > span { color: var(--muted); }
+html[data-palette] .contact-card { background: var(--contact-bg); border-color: var(--contact-border); }
+html[data-palette] .contact-card strong,html[data-palette] .contact-card span { color: var(--deep); }
+html[data-palette] .site-footer { background: var(--footer-bg); color: var(--on-dark); }
+html[data-palette] .site-footer p,html[data-palette] .site-footer small { color: var(--on-dark-muted); }
+html[data-palette] .site-footer strong { color: var(--on-dark); }
+html[data-palette] .site-footer > a { color: var(--gold-pale); }
+html[data-palette] .scroll-top { background: var(--surface-warm); border-color: var(--gold); color: var(--deep); }
+html[data-palette] .scroll-top:focus-visible,html[data-palette] .music-toggle:focus-visible,html[data-palette] .landmark-arrow:focus-visible,html[data-palette] .landmark-dot:focus-visible,html[data-palette] .palette-choice:focus-visible { outline-color: var(--gold); }
+html[data-palette] .nav.open { background: var(--header-bg); border-color: var(--line); }
+
+.palette-switcher { min-width: max-content; display: flex; align-items: center; gap: 5px; }
+.palette-label { margin-right: 3px; color: var(--muted); font-size: .54rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.palette-choice { width: 22px; height: 22px; padding: 2px; display: grid; place-items: center; border: 1px solid transparent; border-radius: 50%; background: transparent; cursor: pointer; }
+.palette-choice > span { width: 15px; height: 15px; display: block; border: 1px solid rgba(35,45,58,.2); border-radius: 50%; background: linear-gradient(135deg, var(--swatch-blue) 0 54%, var(--swatch-gold) 54% 100%); }
+.palette-choice[data-palette-choice="royal"] { --swatch-blue: #19385d; --swatch-gold: #c3a462; }
+.palette-choice[data-palette-choice="powder"] { --swatch-blue: #6c86a4; --swatch-gold: #cbb27c; }
+.palette-choice[data-palette-choice="midnight"] { --swatch-blue: #152844; --swatch-gold: #d0ad66; }
+.palette-choice[aria-pressed="true"] { border-color: var(--deep); box-shadow: 0 0 0 2px var(--gold-pale); }
+
+@media (max-width: 900px) {
+  .palette-switcher { gap: 3px; }
+  .palette-label { font-size: .48rem; }
+}
+@media (max-width: 760px) {
+  html[data-palette] .site-header { gap: 8px; }
+  .brand-copy { font-size: .62rem; }
+  .palette-label { display: none; }
+  .palette-choice { width: 19px; height: 19px; padding: 1px; }
+  .palette-choice > span { width: 15px; height: 15px; }
+  html[data-palette] .event-route::before { background: repeating-linear-gradient(180deg, var(--line-strong) 0 5px, transparent 5px 11px); }
+}
+@media (max-width: 370px) {
+  .brand-logo { width: 40px; height: 40px; }
+  .brand-copy { font-size: .56rem; letter-spacing: .07em; }
+  .menu-toggle { width: 38px; height: 38px; }
+}
