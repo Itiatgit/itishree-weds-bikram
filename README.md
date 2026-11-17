@@ -6,9 +6,9 @@ A responsive wedding invitation shaped around Bhubaneswar: temple stone, old cit
 
 - `index.html` — invitation, family details, celebrations, travel links, RSVP, and compact Bhubaneswar city notes.
 - `assets/styles.css` — pastel visual system and responsive layouts.
-- `assets/script.js` — mobile navigation and countdown to 13 December 2026 at 7:30 PM IST.
-- `assets/itishree-weds-bikram-hero.png` — original AI generated panoramic wedding artwork.
-- `assets/bhubaneswar-caricature-route.png` — original AI generated landmark route illustration.
+- `assets/script.js` — mobile navigation, countdown, landmark carousel, music toggle, and page-top control.
+- `assets/engagement-caricature-hero.jpg` — hand-painted caricature based on the couple's engagement portrait.
+- `assets/lingaraj-bindu.jpg`, `assets/mukteswar.jpg`, `assets/dhauli.jpg`, `assets/udayagiri-khandagiri.jpg`, `assets/kalinga-stadium.jpg` — original illustrated scenes for the Bhubaneswar landmark carousel.
 - `assets/ib-monogram.svg` and `assets/favicon.svg` — pastel I/B monogram for the site and browser icon.
 - `assets/temple-watermark.svg` — decorative Bhubaneswar inspired line art.
 
@@ -18,15 +18,9 @@ A responsive wedding invitation shaped around Bhubaneswar: temple stone, old cit
 - Haldi — Sunday, 13 December 2026, 8:00 AM, at the bride's residence.
 - Wedding — Sunday, 13 December 2026, 7:30 PM onwards, at The Regal Palm.
 
-## City artwork credits
+The city carousel includes nine illustrated notes covering eleven familiar Bhubaneswar landmarks; use its arrows or dots to explore them.
 
-The city caricature route and hero are original AI generated adaptations based on the following Wikimedia Commons photographs. Changes were made; the resulting illustrations are shared under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-
-- [Lingaraj Temple](https://commons.wikimedia.org/wiki/File:Lingaraj_Temple_Bhubaneswar.jpg) — Sanjeeb Behera 45
-- [Mukteswar Temple](https://commons.wikimedia.org/wiki/File:Mukteswar_temple,_Bhubaneswar.jpg) — Rajeshjena453
-- [Dhauli Shanti Stupa](https://commons.wikimedia.org/wiki/File:Dhauli_Shanti_Stupa,_Bhubaneswar.jpg) — Sailesh Patnaik
-- [Udayagiri and Khandagiri Caves](https://commons.wikimedia.org/wiki/File:Udayagiri_and_Khandagiri_Caves_in_Bhubaneswar,_Odisha,_India.jpg) — Billjones94
-- [Kalinga Hockey Stadium](https://commons.wikimedia.org/wiki/File:Kalinga_Hockey_Stadium.jpg) — Subhrasingh
+The YouTube wedding song starts muted when the page loads. Tap the speaker button to turn sound on; browsers may block autoplay with sound until a visitor interacts with the page.
 
 ## GitHub Pages
 
