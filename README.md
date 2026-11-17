@@ -1,27 +1,33 @@
-# Bikram Weds Itishree
+# Itishree Weds Bikram
 
-A responsive wedding invitation inspired by Bhubaneswar's blend of temple heritage, living culture and modern city energy.
+A responsive wedding invitation shaped around Bhubaneswar: temple stone, old city lanes, and the energy of a modern capital. The visual language uses a soft pastel palette, original city inspired illustrations, and the couple's I/B monogram.
 
 ## Site files
 
-- `index.html` — invitation, family details, event schedule, travel links and Bhubaneswar city guide.
+- `index.html` — invitation, family details, celebrations, travel links, RSVP, and compact Bhubaneswar city notes.
 - `assets/styles.css` — pastel visual system and responsive layouts.
-- `assets/script.js` — mobile navigation and live countdown to 13 December 2026 at 7:30 PM IST.
-- `assets/wedding-couple.png` — original wedding illustration.
-- `assets/bhubaneswar-cityscape.png` — original city illustration connecting temple heritage with the hockey stadium.
-- `assets/*-temple.svg`, `assets/dhauli.svg`, `assets/khandagiri-caves.svg`, `assets/kalinga-hockey.svg` — local heritage and sports illustrations.
-- `assets/favicon.svg` — I/B monogram favicon.
+- `assets/script.js` — mobile navigation and countdown to 13 December 2026 at 7:30 PM IST.
+- `assets/itishree-weds-bikram-hero.png` — original AI generated panoramic wedding artwork.
+- `assets/bhubaneswar-caricature-route.png` — original AI generated landmark route illustration.
+- `assets/ib-monogram.svg` and `assets/favicon.svg` — pastel I/B monogram for the site and browser icon.
+- `assets/temple-watermark.svg` — decorative Bhubaneswar inspired line art.
 
-## Visual direction
+## Celebrations
 
-Sea-glass, powder blue, warm ivory, soft coral and sage frame an editorial journey through Bhubaneswar: Lingaraj and Bindu Sagar, Mukteswar, Rajarani, Udayagiri–Khandagiri, Dhauli, Ananta Vasudeva, Kalinga Stadium, Kala Bhoomi and Nandankanan.
+- Mehendi — Saturday, 12 December 2026, 6:00 PM onwards, at the bride's residence.
+- Haldi — Sunday, 13 December 2026, 8:00 AM, at the bride's residence.
+- Wedding — Sunday, 13 December 2026, 7:30 PM onwards, at The Regal Palm.
 
-## Wedding schedule
+## City artwork credits
 
-- Mehendi — Saturday, 12 December 2026, 6:00 PM onwards.
-- Haldi — Sunday, 13 December 2026, 8:00 AM.
-- Wedding — Sunday, 13 December 2026, 7:30 PM onwards.
+The city caricature route and hero are original AI generated adaptations based on the following Wikimedia Commons photographs. Changes were made; the resulting illustrations are shared under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+- [Lingaraj Temple](https://commons.wikimedia.org/wiki/File:Lingaraj_Temple_Bhubaneswar.jpg) — Sanjeeb Behera 45
+- [Mukteswar Temple](https://commons.wikimedia.org/wiki/File:Mukteswar_temple,_Bhubaneswar.jpg) — Rajeshjena453
+- [Dhauli Shanti Stupa](https://commons.wikimedia.org/wiki/File:Dhauli_Shanti_Stupa,_Bhubaneswar.jpg) — Sailesh Patnaik
+- [Udayagiri and Khandagiri Caves](https://commons.wikimedia.org/wiki/File:Udayagiri_and_Khandagiri_Caves_in_Bhubaneswar,_Odisha,_India.jpg) — Billjones94
+- [Kalinga Hockey Stadium](https://commons.wikimedia.org/wiki/File:Kalinga_Hockey_Stadium.jpg) — Subhrasingh
 
 ## GitHub Pages
 
-This is a static site. Publish `main` from the repository root in **Settings → Pages → Build and deployment**. Keep `index.html` and the entire `assets` folder at the root level.
+This is a static site. Publish `main` from the repository root in **Settings → Pages → Build and deployment**. Keep `index.html` and the complete `assets` folder at the root level.

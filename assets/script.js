@@ -18,7 +18,7 @@ if(countdown){
   let countdownTimer;
   const updateCountdown=()=>{
     const remaining=target-Date.now();
-    if(remaining<=0){countdown.innerHTML='<p class="countdown-complete">Today, our forever begins.</p>';window.clearInterval(countdownTimer);return;}
+    if(remaining<=0){countdown.innerHTML='<p class="countdown-complete">Today, Itishree and Bikram begin forever.</p>';window.clearInterval(countdownTimer);return;}
     const units={days:Math.floor(remaining/86400000),hours:Math.floor(remaining/3600000)%24,minutes:Math.floor(remaining/60000)%60,seconds:Math.floor(remaining/1000)%60};
     Object.entries(units).forEach(([unit,value])=>{const output=countdown.querySelector(`[data-unit="${unit}"]`);if(output)output.textContent=String(value).padStart(2,'0');});
   };
