@@ -1,6 +1,6 @@
 # Itishree Weds Bikram
 
-A responsive wedding invitation shaped around Bhubaneswar: temple stone, old city lanes, and the energy of a modern capital. The visual language uses a soft pastel palette, original city inspired illustrations, and the couple's I/B monogram.
+A responsive Odia wedding invitation shaped around Bhubaneswar: temple stone, old city lanes, and the energy of a modern capital. Its visual language pairs deep ink, warm invitation-paper shades, gold detailing, and the couple's I/B monogram.
 
 ## Site files
 
@@ -8,9 +8,9 @@ A responsive wedding invitation shaped around Bhubaneswar: temple stone, old cit
 - `assets/styles.css` — site-wide visual system and responsive layouts.
 - `assets/palettes.css` — three stationery-inspired palettes based on the supplied color references, applied site-wide.
 - `assets/script.js` — mobile navigation, countdown, landmark carousel, music toggle, and page-top control.
-- `assets/bhubaneswar-storybook-hero.jpg` — original animated storybook style wedding artwork, created without a photo reference.
+- `assets/bhubaneswar-storybook-hero.jpg` — storybook-style Bhubaneswar hero illustration.
 - `assets/lingaraj-bindu.jpg`, `assets/mukteswar.jpg`, `assets/dhauli.jpg`, `assets/udayagiri-khandagiri.jpg`, `assets/kalinga-stadium.jpg` — original illustrated scenes for the Bhubaneswar landmark carousel.
-- `assets/ib-monogram.svg` and `assets/favicon.svg` — pastel I/B monogram for the site and browser icon.
+- `assets/ib-monogram.svg` and `assets/favicon.svg` — I/B monogram for the site and browser icon.
 - `assets/temple-watermark.svg` — decorative Bhubaneswar inspired line art.
 
 ## Celebrations

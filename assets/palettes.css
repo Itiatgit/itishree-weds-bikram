@@ -1,6 +1,7 @@
 /* Temporary stationery-inspired previews. Remove the switcher after settling on one palette. */
 :root[data-palette="amour"] {
   --ink:#2E3551; --deep:#2E3551; --deep-soft:#59617A; --rust:#74583E; --coral:#B98F68; --gold:#D8AD83;
+  --sindoor:#9E3E36;
   --paper:#F5EBF6; --cream:#FFFAFC; --muted:#687082; --line:#E2D6E4; --surface-warm:#F8F1F4; --surface-blue:#E9EAF1;
   --surface-blue-strong:#E2E4ED; --surface-cool:#F4F1F5; --surface-gold:#F7EEE6; --surface-control:#EDEAF1;
   --header-bg:rgba(245,235,246,.97); --footer-bg:#2E3551; --on-dark:#FFF9F2; --on-dark-muted:#E5DDE4;
@@ -9,6 +10,7 @@
 }
 :root[data-palette="watusi"] {
   --ink:#192331; --deep:#192331; --deep-soft:#3F5064; --rust:#965E41; --coral:#D78252; --gold:#EFA66F;
+  --sindoor:#A13B32;
   --paper:#FFE1D0; --cream:#FFF9F4; --muted:#626B75; --line:#EAD0BE; --surface-warm:#FFF1E7; --surface-blue:#E7E5E1;
   --surface-blue-strong:#E4DCD5; --surface-cool:#F7E9DF; --surface-gold:#FCEBDD; --surface-control:#F3E3D8;
   --header-bg:rgba(255,225,208,.97); --footer-bg:#192331; --on-dark:#FFF5EB; --on-dark-muted:#E8D8CC;
@@ -17,6 +19,7 @@
 }
 :root[data-palette="butter"] {
   --ink:#5E6572; --deep:#74583E; --deep-soft:#5E6572; --rust:#74583E; --coral:#A97D5E; --gold:#B58B68;
+  --sindoor:#9E4439;
   --paper:#FFF7EE; --cream:#FFFCF8; --muted:#68717D; --line:#E4D8CB; --surface-warm:#FCF2E9; --surface-blue:#E9E8E5;
   --surface-blue-strong:#E3E1DE; --surface-cool:#F2EFEC; --surface-gold:#F7EDE3; --surface-control:#ECE9E5;
   --header-bg:rgba(255,247,238,.97); --footer-bg:#74583E; --on-dark:#FFF8EF; --on-dark-muted:#E9DDD0;
@@ -101,6 +104,9 @@ html[data-palette] .family-card { position: relative; }
 html[data-palette] .family-card::before,html[data-palette] .family-card::after { position: absolute; left: 50%; width: 34px; height: 1px; background: var(--gold); content: ''; transform: translateX(-50%); }
 html[data-palette] .family-card::before { top: 9px; }
 html[data-palette] .family-card::after { bottom: 9px; }
+html[data-palette] .wedding-stop .event-marker > span { color: var(--sindoor); }
+html[data-palette] .wedding-stop .event-card { border-top-color: var(--sindoor); }
+html[data-palette] .odia-line { color: var(--sindoor); }
 
 .palette-switcher { min-width: max-content; display: flex; align-items: center; gap: 5px; }
 .palette-label { margin-right: 3px; color: var(--muted); font-size: .54rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
