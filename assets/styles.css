@@ -1,14 +1,14 @@
 :root {
-  --ink: #29384d;
-  --deep: #19385d;
-  --deep-soft: #4d6f95;
-  --rust: #876334;
-  --coral: #b58e4c;
-  --gold: #c3a462;
-  --paper: #f4f0e7;
-  --cream: #fcfaf5;
-  --muted: #667487;
-  --line: #d9d0c0;
+  --ink: #192331;
+  --deep: #192331;
+  --deep-soft: #2e3551;
+  --rust: #a64f2a;
+  --coral: #ff8656;
+  --gold: #ff9a66;
+  --paper: #fff9f5;
+  --cream: #fffcfa;
+  --muted: #636a73;
+  --line: #d8c0af;
   --serif: 'Cormorant Garamond', Georgia, serif;
   --sans: 'DM Sans', Arial, sans-serif;
   --odia: 'Noto Serif Oriya', serif;

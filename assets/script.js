@@ -12,19 +12,6 @@ if(menuButton&&nav){
   document.addEventListener('keydown',event=>{if(event.key==='Escape')setMenuOpen(false);});
 }
 
-const paletteChoices=document.querySelectorAll('[data-palette-choice]');
-const paletteMeta=document.querySelector('meta[name="theme-color"]');
-const paletteThemeColors={amour:'#F5EBF6',watusi:'#FFE1D0',butter:'#FFF7EE'};
-const applyPalette=palette=>{
-  if(!Object.prototype.hasOwnProperty.call(paletteThemeColors,palette))return;
-  document.documentElement.dataset.palette=palette;
-  paletteChoices.forEach(choice=>choice.setAttribute('aria-pressed',String(choice.dataset.paletteChoice===palette)));
-  if(paletteMeta)paletteMeta.content=paletteThemeColors[palette];
-  try{localStorage.setItem('itishree-color-palette',palette);}catch(e){}
-};
-paletteChoices.forEach(choice=>choice.addEventListener('click',()=>applyPalette(choice.dataset.paletteChoice)));
-applyPalette(document.documentElement.dataset.palette||'amour');
-
 const countdown=document.querySelector('#wedding-countdown');
 if(countdown){
   const target=new Date(countdown.dataset.target).getTime();
