@@ -14,7 +14,7 @@ if(menuButton&&nav){
 
 const paletteChoices=document.querySelectorAll('[data-palette-choice]');
 const paletteMeta=document.querySelector('meta[name="theme-color"]');
-const paletteThemeColors={royal:'#f4f0e7',powder:'#f1f4f8',midnight:'#f3f0e8'};
+const paletteThemeColors={amour:'#F5EBF6',watusi:'#FFE1D0',butter:'#FFF7EE'};
 const applyPalette=palette=>{
   if(!Object.prototype.hasOwnProperty.call(paletteThemeColors,palette))return;
   document.documentElement.dataset.palette=palette;
@@ -23,7 +23,7 @@ const applyPalette=palette=>{
   try{localStorage.setItem('itishree-color-palette',palette);}catch(e){}
 };
 paletteChoices.forEach(choice=>choice.addEventListener('click',()=>applyPalette(choice.dataset.paletteChoice)));
-applyPalette(document.documentElement.dataset.palette||'royal');
+applyPalette(document.documentElement.dataset.palette||'amour');
 
 const countdown=document.querySelector('#wedding-countdown');
 if(countdown){
