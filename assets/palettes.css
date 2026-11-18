@@ -9,6 +9,25 @@
   --hero-wash-rgb:255,249,245; --deep-rgb:25,35,49; --gold-rgb:255,134,86;
 }
 
+/* Light coral and ivory petals drift through the page without blocking controls. */
+.petal-rain { position: fixed; inset: 0; z-index: 8; overflow: hidden; pointer-events: none; }
+.petal-rain i { position: absolute; top: -8vh; left: var(--petal-left); width: 11px; height: 17px; border: 1px solid rgba(166,79,42,.2); border-radius: 90% 5% 90% 5%; background: linear-gradient(145deg, #ffd2bb, var(--coral) 78%); box-shadow: 0 2px 7px rgba(var(--deep-rgb),.1); opacity: .58; animation: petal-fall var(--petal-time) linear var(--petal-delay) infinite; }
+.petal-rain i:nth-child(1) { --petal-left: 4%; --petal-time: 19s; --petal-delay: -7s; --petal-drift: 8vw; }
+.petal-rain i:nth-child(2) { --petal-left: 11%; --petal-time: 24s; --petal-delay: -16s; --petal-drift: -5vw; }
+.petal-rain i:nth-child(3) { --petal-left: 19%; --petal-time: 21s; --petal-delay: -3s; --petal-drift: 6vw; }
+.petal-rain i:nth-child(4) { --petal-left: 27%; --petal-time: 26s; --petal-delay: -21s; --petal-drift: -7vw; }
+.petal-rain i:nth-child(5) { --petal-left: 35%; --petal-time: 18s; --petal-delay: -11s; --petal-drift: 5vw; }
+.petal-rain i:nth-child(6) { --petal-left: 43%; --petal-time: 23s; --petal-delay: -19s; --petal-drift: -6vw; }
+.petal-rain i:nth-child(7) { --petal-left: 51%; --petal-time: 20s; --petal-delay: -4s; --petal-drift: 7vw; }
+.petal-rain i:nth-child(8) { --petal-left: 59%; --petal-time: 25s; --petal-delay: -15s; --petal-drift: -5vw; }
+.petal-rain i:nth-child(9) { --petal-left: 67%; --petal-time: 19s; --petal-delay: -8s; --petal-drift: 6vw; }
+.petal-rain i:nth-child(10) { --petal-left: 75%; --petal-time: 24s; --petal-delay: -20s; --petal-drift: -8vw; }
+.petal-rain i:nth-child(11) { --petal-left: 83%; --petal-time: 22s; --petal-delay: -12s; --petal-drift: 5vw; }
+.petal-rain i:nth-child(12) { --petal-left: 91%; --petal-time: 27s; --petal-delay: -23s; --petal-drift: -6vw; }
+.petal-rain i:nth-child(13) { --petal-left: 31%; --petal-time: 28s; --petal-delay: -25s; --petal-drift: 8vw; opacity: .36; }
+.petal-rain i:nth-child(14) { --petal-left: 71%; --petal-time: 29s; --petal-delay: -18s; --petal-drift: -7vw; opacity: .36; }
+@keyframes petal-fall { to { transform: translate3d(var(--petal-drift), 115vh, 0) rotate(660deg); } }
+
 html[data-palette] body { background: var(--paper); color: var(--ink); }
 html[data-palette] .blessing-bar { background: var(--surface-warm); border-color: var(--line); color: var(--deep); }
 html[data-palette] .site-header { background: var(--header-bg); border-color: var(--line); }
@@ -108,6 +127,7 @@ html[data-palette] .site-header { box-shadow: 0 8px 30px rgba(var(--deep-rgb),.1
 html[data-palette] .nav .nav-rsvp { background: var(--deep); color: var(--on-dark); }
 html[data-palette] .hero { background: linear-gradient(120deg, #f3d7c6, var(--hero-base) 48%, #e5c1a8); }
 html[data-palette] .hero-image { filter: saturate(1.16) contrast(1.05); }
+html[data-palette] .hero-image { object-position: 68% 20%; }
 html[data-palette] .hero-wash { background: linear-gradient(90deg, rgba(var(--hero-wash-rgb),.97) 0%, rgba(var(--hero-wash-rgb),.88) 19%, rgba(var(--hero-wash-rgb),.62) 36%, rgba(var(--hero-wash-rgb),.08) 66%, transparent 100%), linear-gradient(0deg, rgba(var(--deep-rgb),.2), transparent 34%); }
 html[data-palette] .hero h1 { text-shadow: 0 2px 0 rgba(255,255,255,.45); }
 html[data-palette] .button-primary { background: var(--coral); color: var(--deep); box-shadow: 0 8px 22px rgba(var(--deep-rgb),.18); }
@@ -150,6 +170,10 @@ html[data-palette] .contact-card { border-radius: 3px; box-shadow: 0 5px 16px rg
 html[data-palette] .site-footer { border-top: 4px solid var(--coral); }
 html[data-palette] .scroll-top { background: var(--coral); border-color: var(--deep); }
 @media (max-width: 760px) {
+  .petal-rain i { width: 8px; height: 12px; opacity: .4; }
   html[data-palette] .hero-wash { background: linear-gradient(0deg, rgba(var(--hero-wash-rgb),1) 0%, rgba(var(--hero-wash-rgb),.96) 16%, rgba(var(--hero-wash-rgb),.62) 48%, transparent 78%); }
   html[data-palette] .event-route::before { background: repeating-linear-gradient(180deg, var(--coral) 0 5px, transparent 5px 11px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .petal-rain { display: none; }
 }

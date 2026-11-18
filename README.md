@@ -8,7 +8,7 @@ A responsive Odia wedding invitation shaped around Bhubaneswar: temple stone, ol
 - `assets/styles.css` — site-wide visual system and responsive layouts.
 - `assets/palettes.css` — the final ivory, Black Pearl, and tangerine-coral wedding palette.
 - `assets/script.js` — mobile navigation, countdown, landmark carousel, music toggle, and page-top control.
-- `assets/bhubaneswar-storybook-hero.jpg` — storybook-style Bhubaneswar hero illustration.
+- `assets/itishree-bikram-hero.png` — hand-painted caricature hero artwork based on the supplied couple references.
 - `assets/lingaraj-bindu.jpg`, `assets/mukteswar.jpg`, `assets/dhauli.jpg`, `assets/udayagiri-khandagiri.jpg`, `assets/kalinga-stadium.jpg` — original illustrated scenes for the Bhubaneswar landmark carousel.
 - `assets/ib-monogram.svg` and `assets/favicon.svg` — I/B monogram for the site and browser icon.
 - `assets/temple-watermark.svg` — decorative Bhubaneswar inspired line art.
