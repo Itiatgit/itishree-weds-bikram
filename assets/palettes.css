@@ -167,8 +167,10 @@ html[data-palette] .travel-links { padding: 0 18px; border: 1px solid var(--gold
 html[data-palette] .travel-links > a > span { color: var(--rust); }
 html[data-palette] .rsvp-section { border-top: 4px solid var(--coral); border-bottom: 4px solid var(--coral); }
 html[data-palette] .contact-card { border-radius: 3px; box-shadow: 0 5px 16px rgba(var(--deep-rgb),.12); }
+html[data-palette] .contact-card strong small { display: block; margin-top: 2px; color: var(--muted); font-size: .56rem; font-weight: 500; }
 html[data-palette] .site-footer { border-top: 4px solid var(--coral); }
 html[data-palette] .scroll-top { background: var(--coral); border-color: var(--deep); }
+html[data-palette] .footer-logo { padding: 7px; border: 1px solid var(--coral); border-radius: 50%; background: var(--cream); filter: none; }
 @media (max-width: 760px) {
   .petal-rain i { width: 8px; height: 12px; opacity: .4; }
   html[data-palette] .hero-wash { background: linear-gradient(0deg, rgba(var(--hero-wash-rgb),1) 0%, rgba(var(--hero-wash-rgb),.96) 16%, rgba(var(--hero-wash-rgb),.62) 48%, transparent 78%); }
