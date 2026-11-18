@@ -100,3 +100,56 @@ html[data-palette] .odia-line { color: var(--sindoor); }
   .brand-copy { font-size: .56rem; letter-spacing: .07em; }
   .menu-toggle { width: 38px; height: 38px; }
 }
+
+/* Stronger use of the same ink, ivory, and coral palette. */
+html[data-palette] .blessing-bar { background: var(--deep); border-color: var(--coral); color: var(--on-dark); }
+html[data-palette] .blessing-divider { background: var(--coral); }
+html[data-palette] .site-header { box-shadow: 0 8px 30px rgba(var(--deep-rgb),.12); }
+html[data-palette] .nav .nav-rsvp { background: var(--deep); color: var(--on-dark); }
+html[data-palette] .hero { background: linear-gradient(120deg, #f3d7c6, var(--hero-base) 48%, #e5c1a8); }
+html[data-palette] .hero-image { filter: saturate(1.16) contrast(1.05); }
+html[data-palette] .hero-wash { background: linear-gradient(90deg, rgba(var(--hero-wash-rgb),.97) 0%, rgba(var(--hero-wash-rgb),.88) 19%, rgba(var(--hero-wash-rgb),.62) 36%, rgba(var(--hero-wash-rgb),.08) 66%, transparent 100%), linear-gradient(0deg, rgba(var(--deep-rgb),.2), transparent 34%); }
+html[data-palette] .hero h1 { text-shadow: 0 2px 0 rgba(255,255,255,.45); }
+html[data-palette] .button-primary { background: var(--coral); color: var(--deep); box-shadow: 0 8px 22px rgba(var(--deep-rgb),.18); }
+html[data-palette] .button-primary:hover { background: var(--deep); color: var(--on-dark); }
+html[data-palette] .countdown-section { background: var(--deep); }
+html[data-palette] .countdown-bar { color: var(--on-dark); border-color: rgba(255,154,102,.48); }
+html[data-palette] .countdown-caption h2,html[data-palette] .countdown strong { color: var(--on-dark); }
+html[data-palette] .countdown-caption .eyebrow,html[data-palette] .countdown-zone { color: var(--coral); }
+html[data-palette] .countdown span { color: var(--on-dark-muted); }
+html[data-palette] .countdown > i { background: rgba(255,154,102,.55); }
+html[data-palette] .story-section { background: var(--deep); }
+html[data-palette] .story-section::before { opacity: .13; }
+html[data-palette] .story-label { border-color: rgba(255,154,102,.48); }
+html[data-palette] .story-label .eyebrow,html[data-palette] .story-route-mark i { color: var(--coral); }
+html[data-palette] .story-route-mark,html[data-palette] .story-text p { color: var(--on-dark-muted); }
+html[data-palette] .story-content h2 { color: var(--on-dark); }
+html[data-palette] .story-text .odia-line { color: var(--coral); }
+html[data-palette] .city-copy h2 em { color: var(--rust); }
+html[data-palette] .landmark-carousel { border: 2px solid var(--coral); box-shadow: 0 18px 45px rgba(var(--deep-rgb),.16); }
+html[data-palette] .landmark-controls { background: var(--deep); border-color: var(--deep); }
+html[data-palette] .landmark-arrow { color: var(--on-dark); border-color: var(--coral); }
+html[data-palette] .landmark-arrow:hover,html[data-palette] .landmark-arrow:focus-visible { background: var(--coral); color: var(--deep); }
+html[data-palette] .landmark-dot { background: rgba(255,249,245,.55); }
+html[data-palette] .landmark-dot[aria-current="true"] { background: var(--coral); }
+html[data-palette] .family-card { border: 2px solid var(--coral); box-shadow: inset 0 0 0 5px rgba(var(--gold-rgb),.12), 0 16px 34px rgba(var(--deep-rgb),.17); }
+html[data-palette] .family-card .eyebrow,html[data-palette] .family-card small { color: var(--coral); }
+html[data-palette] .family-divider { color: var(--coral); }
+html[data-palette] .event-route::before { background-image: repeating-linear-gradient(90deg, var(--coral) 0 5px, transparent 5px 11px); }
+html[data-palette] .mehendi-stop .event-card { background: #fff9f5; }
+html[data-palette] .haldi-stop .event-card { background: #F7D9C8; border-color: var(--coral); }
+html[data-palette] .wedding-stop .event-card { background: var(--deep); border-color: var(--coral); color: var(--on-dark); }
+html[data-palette] .wedding-stop .event-card h3,html[data-palette] .wedding-stop .event-copy,html[data-palette] .wedding-stop .event-venue address { color: var(--on-dark); }
+html[data-palette] .wedding-stop .event-venue { border-color: rgba(255,154,102,.45); }
+html[data-palette] .wedding-stop .event-time,html[data-palette] .wedding-stop .event-venue > span,html[data-palette] .wedding-stop .event-venue a { color: var(--coral); }
+html[data-palette] .travel-section { background: #F3E2D7; }
+html[data-palette] .travel-links { padding: 0 18px; border: 1px solid var(--gold-pale); border-radius: 6px; background: var(--cream); box-shadow: 0 12px 30px rgba(var(--deep-rgb),.08); }
+html[data-palette] .travel-links > a > span { color: var(--rust); }
+html[data-palette] .rsvp-section { border-top: 4px solid var(--coral); border-bottom: 4px solid var(--coral); }
+html[data-palette] .contact-card { border-radius: 3px; box-shadow: 0 5px 16px rgba(var(--deep-rgb),.12); }
+html[data-palette] .site-footer { border-top: 4px solid var(--coral); }
+html[data-palette] .scroll-top { background: var(--coral); border-color: var(--deep); }
+@media (max-width: 760px) {
+  html[data-palette] .hero-wash { background: linear-gradient(0deg, rgba(var(--hero-wash-rgb),1) 0%, rgba(var(--hero-wash-rgb),.96) 16%, rgba(var(--hero-wash-rgb),.62) 48%, transparent 78%); }
+  html[data-palette] .event-route::before { background: repeating-linear-gradient(180deg, var(--coral) 0 5px, transparent 5px 11px); }
+}
