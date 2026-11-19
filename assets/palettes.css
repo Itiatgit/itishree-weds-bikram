@@ -1,181 +1,105 @@
-/* Final wedding palette: Black Pearl, warm ivory, and a tangerine-coral foil accent. */
+/* ==========================================================================
+   Itishree Weds Bikram — wedding palette & atmosphere
+   Warm ivory stationery, deep kumkum maroon, antique gold, and a soft
+   rose-clay accent inspired by Odia temple art and bridal silk.
+   ========================================================================== */
+
+:root,
 :root[data-palette="wedding"] {
-  --ink:#192331; --deep:#192331; --deep-soft:#2E3551; --rust:#A64F2A; --coral:#FF8656; --gold:#FF9A66;
-  --sindoor:#C74635; --paper:#FFF9F5; --cream:#FFFCFA; --muted:#636A73; --line:#D8C0AF;
-  --surface-warm:#FFF4ED; --surface-blue:#F1E9E3; --surface-blue-strong:#2E3551; --surface-cool:#F5EDE8;
-  --surface-gold:#FFF0E6; --surface-control:#F8E6DA; --header-bg:rgba(255,249,245,.97);
-  --footer-bg:#192331; --on-dark:#FFF9F5; --on-dark-muted:#EADAD0; --contact-bg:#FFF3EB;
-  --contact-border:#E5B69B; --line-strong:#C96B42; --gold-pale:#E8B394; --hero-base:#F0E6DF;
-  --hero-wash-rgb:255,249,245; --deep-rgb:25,35,49; --gold-rgb:255,134,86;
+  /* Core ink & surfaces */
+  --ink: #352129;
+  --deep: #3b0f1c;
+  --deep-soft: #5d1c2c;
+  --wine: #6e2337;
+  --paper: #fbf6ec;
+  --cream: #fffcf6;
+  --blush: #f8ece1;
+  --blush-deep: #f1dccb;
+  --muted: #75655f;
+  --line: #e6d7c3;
+  --line-strong: #d5bfa2;
+
+  /* Metal & accents */
+  --gold: #c19a5b;
+  --gold-deep: #8a642d;
+  --gold-light: #e7d3ae;
+  --gold-faint: #f3e8d4;
+  --rust: #9c4a33;
+  --coral: #d9704f;
+  --sindoor: #b62e3a;
+
+  /* On-dark type */
+  --on-dark: #fcf5e8;
+  --on-dark-muted: #e6d2c0;
+
+  /* Legacy aliases used by the stylesheet */
+  --hero-base: #f3e7d5;
+  --hero-wash-rgb: 251, 246, 236;
+  --deep-rgb: 59, 15, 28;
+  --gold-rgb: 193, 154, 91;
+
+  /* Type */
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'DM Sans', Arial, sans-serif;
+  --odia: 'Noto Serif Oriya', 'Cormorant Garamond', serif;
+
+  /* Depth */
+  --shadow-soft: 0 18px 45px rgba(59, 15, 28, .07);
+  --shadow-lift: 0 26px 60px rgba(59, 15, 28, .12);
 }
 
-/* Light coral and ivory petals drift through the page without blocking controls. */
-.petal-rain { position: fixed; inset: 0; z-index: 8; overflow: hidden; pointer-events: none; }
-.petal-rain i { position: absolute; top: -8vh; left: var(--petal-left); width: 11px; height: 17px; border: 1px solid rgba(166,79,42,.2); border-radius: 90% 5% 90% 5%; background: linear-gradient(145deg, #ffd2bb, var(--coral) 78%); box-shadow: 0 2px 7px rgba(var(--deep-rgb),.1); opacity: .58; animation: petal-fall var(--petal-time) linear var(--petal-delay) infinite; }
-.petal-rain i:nth-child(1) { --petal-left: 4%; --petal-time: 19s; --petal-delay: -7s; --petal-drift: 8vw; }
-.petal-rain i:nth-child(2) { --petal-left: 11%; --petal-time: 24s; --petal-delay: -16s; --petal-drift: -5vw; }
-.petal-rain i:nth-child(3) { --petal-left: 19%; --petal-time: 21s; --petal-delay: -3s; --petal-drift: 6vw; }
-.petal-rain i:nth-child(4) { --petal-left: 27%; --petal-time: 26s; --petal-delay: -21s; --petal-drift: -7vw; }
-.petal-rain i:nth-child(5) { --petal-left: 35%; --petal-time: 18s; --petal-delay: -11s; --petal-drift: 5vw; }
-.petal-rain i:nth-child(6) { --petal-left: 43%; --petal-time: 23s; --petal-delay: -19s; --petal-drift: -6vw; }
-.petal-rain i:nth-child(7) { --petal-left: 51%; --petal-time: 20s; --petal-delay: -4s; --petal-drift: 7vw; }
-.petal-rain i:nth-child(8) { --petal-left: 59%; --petal-time: 25s; --petal-delay: -15s; --petal-drift: -5vw; }
-.petal-rain i:nth-child(9) { --petal-left: 67%; --petal-time: 19s; --petal-delay: -8s; --petal-drift: 6vw; }
-.petal-rain i:nth-child(10) { --petal-left: 75%; --petal-time: 24s; --petal-delay: -20s; --petal-drift: -8vw; }
-.petal-rain i:nth-child(11) { --petal-left: 83%; --petal-time: 22s; --petal-delay: -12s; --petal-drift: 5vw; }
-.petal-rain i:nth-child(12) { --petal-left: 91%; --petal-time: 27s; --petal-delay: -23s; --petal-drift: -6vw; }
-.petal-rain i:nth-child(13) { --petal-left: 31%; --petal-time: 28s; --petal-delay: -25s; --petal-drift: 8vw; opacity: .36; }
-.petal-rain i:nth-child(14) { --petal-left: 71%; --petal-time: 29s; --petal-delay: -18s; --petal-drift: -7vw; opacity: .36; }
-@keyframes petal-fall { to { transform: translate3d(var(--petal-drift), 115vh, 0) rotate(660deg); } }
+html[data-palette] {
+  background: var(--paper);
+}
 
-html[data-palette] body { background: var(--paper); color: var(--ink); }
-html[data-palette] .blessing-bar { background: var(--surface-warm); border-color: var(--line); color: var(--deep); }
-html[data-palette] .site-header { background: var(--header-bg); border-color: var(--line); }
-html[data-palette] .brand,html[data-palette] .nav .nav-rsvp,html[data-palette] .menu-toggle { color: var(--deep); }
-html[data-palette] .brand-copy small,html[data-palette] .nav a { color: var(--muted); }
-html[data-palette] .nav a:hover { color: var(--gold); }
-html[data-palette] .nav .nav-rsvp,html[data-palette] .menu-toggle { border-color: var(--gold); }
-html[data-palette] .hero { background: var(--hero-base); }
-html[data-palette] .hero-wash { background: linear-gradient(90deg, rgba(var(--hero-wash-rgb),1) 0%, rgba(var(--hero-wash-rgb),.93) 20%, rgba(var(--hero-wash-rgb),.74) 38%, rgba(var(--hero-wash-rgb),.12) 67%, transparent 100%), linear-gradient(0deg, rgba(var(--deep-rgb),.12), transparent 28%); }
-html[data-palette] .hero-overline,html[data-palette] .countdown-zone,html[data-palette] .landmark-caption a,html[data-palette] .travel-links b { color: var(--rust); }
-html[data-palette] .hero-kicker,html[data-palette] .hero-date,html[data-palette] .hero-place,html[data-palette] .story-text p,html[data-palette] .rsvp-section > .wrap > p:not(.eyebrow) { color: var(--muted); }
-html[data-palette] .hero-overline i,html[data-palette] .scroll-cue { background: var(--gold); }
-html[data-palette] .hero-side-note b { color: var(--gold); }
-html[data-palette] .scroll-cue span { background: transparent; border-color: var(--gold); }
-html[data-palette] .hero-side-note { color: var(--deep); background: var(--surface-warm); border-color: var(--gold-pale); }
-html[data-palette] .button-primary,html[data-palette] .music-toggle { background: var(--deep); color: var(--on-dark); }
-html[data-palette] .button-text { color: var(--deep); }
-html[data-palette] .countdown-section,html[data-palette] .families-section { background: var(--cream); }
-html[data-palette] .countdown-bar,html[data-palette] .story-label,html[data-palette] .landmark-controls,html[data-palette] .event-venue,html[data-palette] .travel-links,html[data-palette] .travel-links > a { border-color: var(--line); }
-html[data-palette] .countdown-symbol { border-color: var(--gold); color: var(--rust); }
-html[data-palette] .countdown strong,html[data-palette] .countdown-caption h2,html[data-palette] .countdown-complete { color: var(--deep); }
-html[data-palette] .countdown span,html[data-palette] .story-route-mark,html[data-palette] .city-footnote,html[data-palette] .event-marker time small { color: var(--muted); }
-html[data-palette] .story-section,html[data-palette] .events-section { background: var(--surface-blue); }
-html[data-palette] .story-route-mark i,html[data-palette] .odia-line i { color: var(--gold); }
-html[data-palette] .odia-line { color: var(--deep-soft); }
-html[data-palette] .city-ribbon { background: var(--surface-warm); border-color: var(--line); }
-html[data-palette] .city-ribbon::after { border-color: rgba(var(--gold-rgb),.24); box-shadow: 0 0 0 20px rgba(var(--gold-rgb),.1), 0 0 0 40px rgba(var(--gold-rgb),.06); }
-html[data-palette] .landmark-carousel { background: var(--cream); border-color: var(--line); }
-html[data-palette] .landmark-arrow { border-color: var(--line-strong); color: var(--deep); }
-html[data-palette] .landmark-arrow:hover,html[data-palette] .landmark-arrow:focus-visible { background: var(--surface-control); }
-html[data-palette] .landmark-dot { background: var(--gold-pale); }
-html[data-palette] .landmark-dot[aria-current="true"] { background: var(--gold); box-shadow: 0 0 0 3px rgba(var(--gold-rgb),.2); }
-html[data-palette] .family-card { border: 1px solid var(--gold); border-radius: 4px; background: var(--deep); box-shadow: inset 0 0 0 4px rgba(var(--gold-rgb),.12); }
-html[data-palette] .family-card .eyebrow,html[data-palette] .family-card small { color: var(--coral); }
-html[data-palette] .family-card strong,html[data-palette] .family-card > p:not(.eyebrow) { color: var(--on-dark-muted); }
-html[data-palette] .family-divider,html[data-palette] .family-card h3 { color: var(--deep); }
-html[data-palette] .family-divider span { background: var(--gold-pale); }
-html[data-palette] .events-heading > p,html[data-palette] .event-copy,html[data-palette] .event-venue address { color: var(--muted); }
-html[data-palette] .event-route::before { background-image: repeating-linear-gradient(90deg, var(--line-strong) 0 5px, transparent 5px 11px); }
-html[data-palette] .event-marker > span { background: var(--cream); border-color: var(--gold); color: var(--rust); }
-html[data-palette] .haldi-stop .event-marker > span,html[data-palette] .wedding-stop .event-marker > span { border-color: var(--gold); color: var(--rust); }
-html[data-palette] .event-marker time { background: var(--surface-blue); color: var(--deep); }
-html[data-palette] .event-card { background: var(--cream); border-top-color: var(--gold); }
-html[data-palette] .haldi-stop .event-card { background: var(--surface-gold); border-color: var(--gold); }
-html[data-palette] .wedding-stop .event-card { background: var(--surface-cool); border-color: var(--deep-soft); }
-html[data-palette] .event-time,html[data-palette] .event-venue > span { color: var(--rust); }
-html[data-palette] .haldi-stop .event-time,html[data-palette] .wedding-stop .event-time { color: var(--rust); }
-html[data-palette] .event-card h3,html[data-palette] .travel-links strong { color: var(--deep); }
-html[data-palette] .event-subtitle,html[data-palette] .event-venue a,html[data-palette] .travel-links > a > span { color: var(--gold); }
-html[data-palette] .travel-section { background: var(--surface-warm); }
-html[data-palette] .travel-intro > p:last-child,html[data-palette] .travel-links small { color: var(--muted); }
-html[data-palette] .rsvp-section { background: var(--deep); color: var(--on-dark); }
-html[data-palette] .rsvp-section .eyebrow { color: var(--gold); }
-html[data-palette] .rsvp-section h2 { color: var(--on-dark); }
-html[data-palette] .rsvp-section .button-primary { background: var(--gold); color: var(--deep); }
-html[data-palette] .rsvp-logo { padding: 7px; border: 1px solid var(--gold); border-radius: 50%; background: var(--cream); }
-html[data-palette] .contacts,html[data-palette] .contacts > span { color: var(--on-dark-muted); }
-html[data-palette] .contact-card { background: var(--contact-bg); border-color: var(--contact-border); }
-html[data-palette] .contact-card strong,html[data-palette] .contact-card span { color: var(--deep); }
-html[data-palette] .site-footer { background: var(--footer-bg); color: var(--on-dark); }
-html[data-palette] .site-footer p,html[data-palette] .site-footer small { color: var(--on-dark-muted); }
-html[data-palette] .site-footer strong { color: var(--on-dark); }
-html[data-palette] .site-footer > a { color: var(--gold-pale); }
-html[data-palette] .scroll-top { background: var(--surface-warm); border-color: var(--gold); color: var(--deep); }
-html[data-palette] .scroll-top:focus-visible,html[data-palette] .music-toggle:focus-visible,html[data-palette] .landmark-arrow:focus-visible,html[data-palette] .landmark-dot:focus-visible { outline-color: var(--gold); }
-html[data-palette] .nav.open { background: var(--header-bg); border-color: var(--line); }
-html[data-palette] .site-header { border-bottom-color: var(--gold-pale); }
-html[data-palette] .countdown-bar { border-top: 1px solid var(--gold-pale); background-image: linear-gradient(110deg, rgba(var(--gold-rgb),.06), transparent 42%, rgba(var(--deep-rgb),.025)); }
-html[data-palette] .city-ribbon { background-image: linear-gradient(rgba(var(--gold-rgb),.035) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--gold-rgb),.035) 1px, transparent 1px); background-size: 22px 22px; }
-html[data-palette] .event-card { border: 1px solid var(--gold-pale); border-top: 3px solid var(--gold); box-shadow: 0 12px 30px rgba(var(--deep-rgb),.08); }
-html[data-palette] .rsvp-section > .wrap > p:not(.eyebrow) { color: var(--on-dark-muted); }
-html[data-palette] .hero-side-note { box-shadow: 0 5px 24px rgba(var(--deep-rgb),.09); }
-html[data-palette] .family-card h3 { color: var(--on-dark); }
-html[data-palette] .family-card { position: relative; }
-html[data-palette] .family-card::before,html[data-palette] .family-card::after { position: absolute; left: 50%; width: 34px; height: 1px; background: var(--coral); content: ''; transform: translateX(-50%); }
-html[data-palette] .family-card::before { top: 9px; }
-html[data-palette] .family-card::after { bottom: 9px; }
-html[data-palette] .wedding-stop .event-marker > span { color: var(--sindoor); }
-html[data-palette] .wedding-stop .event-card { border-top-color: var(--sindoor); }
-html[data-palette] .odia-line { color: var(--sindoor); }
+/* --------------------------------------------------------------------------
+   A slow drift of rose-gold petals. Purely decorative, never interactive.
+   -------------------------------------------------------------------------- */
+.petal-rain {
+  position: fixed;
+  inset: 0;
+  z-index: 6;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.petal-rain i {
+  position: absolute;
+  top: -8vh;
+  left: var(--petal-left);
+  width: 9px;
+  height: 14px;
+  border: 1px solid rgba(154, 115, 56, .18);
+  border-radius: 90% 8% 90% 8%;
+  background: linear-gradient(145deg, #f7e3cf, var(--coral) 82%);
+  box-shadow: 0 2px 8px rgba(var(--deep-rgb), .08);
+  opacity: .34;
+  animation: petal-fall var(--petal-time) linear var(--petal-delay) infinite;
+}
+
+.petal-rain i:nth-child(1) { --petal-left: 4%; --petal-time: 21s; --petal-delay: -7s; --petal-drift: 8vw; }
+.petal-rain i:nth-child(2) { --petal-left: 11%; --petal-time: 27s; --petal-delay: -16s; --petal-drift: -5vw; }
+.petal-rain i:nth-child(3) { --petal-left: 19%; --petal-time: 23s; --petal-delay: -3s; --petal-drift: 6vw; }
+.petal-rain i:nth-child(4) { --petal-left: 27%; --petal-time: 29s; --petal-delay: -21s; --petal-drift: -7vw; }
+.petal-rain i:nth-child(5) { --petal-left: 35%; --petal-time: 20s; --petal-delay: -11s; --petal-drift: 5vw; }
+.petal-rain i:nth-child(6) { --petal-left: 43%; --petal-time: 25s; --petal-delay: -19s; --petal-drift: -6vw; }
+.petal-rain i:nth-child(7) { --petal-left: 51%; --petal-time: 22s; --petal-delay: -4s; --petal-drift: 7vw; }
+.petal-rain i:nth-child(8) { --petal-left: 59%; --petal-time: 28s; --petal-delay: -15s; --petal-drift: -5vw; }
+.petal-rain i:nth-child(9) { --petal-left: 67%; --petal-time: 21s; --petal-delay: -8s; --petal-drift: 6vw; }
+.petal-rain i:nth-child(10) { --petal-left: 75%; --petal-time: 26s; --petal-delay: -20s; --petal-drift: -8vw; }
+.petal-rain i:nth-child(11) { --petal-left: 83%; --petal-time: 24s; --petal-delay: -12s; --petal-drift: 5vw; }
+.petal-rain i:nth-child(12) { --petal-left: 91%; --petal-time: 30s; --petal-delay: -23s; --petal-drift: -6vw; }
+.petal-rain i:nth-child(13) { --petal-left: 31%; --petal-time: 31s; --petal-delay: -25s; --petal-drift: 8vw; opacity: .2; }
+.petal-rain i:nth-child(14) { --petal-left: 71%; --petal-time: 32s; --petal-delay: -18s; --petal-drift: -7vw; opacity: .2; }
+
+@keyframes petal-fall {
+  to { transform: translate3d(var(--petal-drift), 115vh, 0) rotate(660deg); }
+}
 
 @media (max-width: 760px) {
-  html[data-palette] .site-header { gap: 8px; }
-  .brand-copy { font-size: .62rem; }
-  html[data-palette] .event-route::before { background: repeating-linear-gradient(180deg, var(--line-strong) 0 5px, transparent 5px 11px); }
-}
-@media (max-width: 370px) {
-  .brand-logo { width: 40px; height: 40px; }
-  .brand-copy { font-size: .56rem; letter-spacing: .07em; }
-  .menu-toggle { width: 38px; height: 38px; }
+  .petal-rain i { width: 7px; height: 11px; opacity: .26; }
 }
 
-/* Stronger use of the same ink, ivory, and coral palette. */
-html[data-palette] .blessing-bar { background: var(--deep); border-color: var(--coral); color: var(--on-dark); }
-html[data-palette] .blessing-divider { background: var(--coral); }
-html[data-palette] .site-header { box-shadow: 0 8px 30px rgba(var(--deep-rgb),.12); }
-html[data-palette] .nav .nav-rsvp { background: var(--deep); color: var(--on-dark); }
-html[data-palette] .hero { background: linear-gradient(120deg, #f3d7c6, var(--hero-base) 48%, #e5c1a8); }
-html[data-palette] .hero-image { filter: saturate(1.16) contrast(1.05); }
-html[data-palette] .hero-image { object-position: 68% 20%; }
-html[data-palette] .hero-wash { background: linear-gradient(90deg, rgba(var(--hero-wash-rgb),.97) 0%, rgba(var(--hero-wash-rgb),.88) 19%, rgba(var(--hero-wash-rgb),.62) 36%, rgba(var(--hero-wash-rgb),.08) 66%, transparent 100%), linear-gradient(0deg, rgba(var(--deep-rgb),.2), transparent 34%); }
-html[data-palette] .hero h1 { text-shadow: 0 2px 0 rgba(255,255,255,.45); }
-html[data-palette] .button-primary { background: var(--coral); color: var(--deep); box-shadow: 0 8px 22px rgba(var(--deep-rgb),.18); }
-html[data-palette] .button-primary:hover { background: var(--deep); color: var(--on-dark); }
-html[data-palette] .countdown-section { background: var(--deep); }
-html[data-palette] .countdown-bar { color: var(--on-dark); border-color: rgba(255,154,102,.48); }
-html[data-palette] .countdown-caption h2,html[data-palette] .countdown strong { color: var(--on-dark); }
-html[data-palette] .countdown-caption .eyebrow,html[data-palette] .countdown-zone { color: var(--coral); }
-html[data-palette] .countdown span { color: var(--on-dark-muted); }
-html[data-palette] .countdown > i { background: rgba(255,154,102,.55); }
-html[data-palette] .story-section { background: var(--deep); }
-html[data-palette] .story-section::before { opacity: .13; }
-html[data-palette] .story-label { border-color: rgba(255,154,102,.48); }
-html[data-palette] .story-label .eyebrow,html[data-palette] .story-route-mark i { color: var(--coral); }
-html[data-palette] .story-route-mark,html[data-palette] .story-text p { color: var(--on-dark-muted); }
-html[data-palette] .story-content h2 { color: var(--on-dark); }
-html[data-palette] .story-text .odia-line { color: var(--coral); }
-html[data-palette] .city-copy h2 em { color: var(--rust); }
-html[data-palette] .landmark-carousel { border: 2px solid var(--coral); box-shadow: 0 18px 45px rgba(var(--deep-rgb),.16); }
-html[data-palette] .landmark-controls { background: var(--deep); border-color: var(--deep); }
-html[data-palette] .landmark-arrow { color: var(--on-dark); border-color: var(--coral); }
-html[data-palette] .landmark-arrow:hover,html[data-palette] .landmark-arrow:focus-visible { background: var(--coral); color: var(--deep); }
-html[data-palette] .landmark-dot { background: rgba(255,249,245,.55); }
-html[data-palette] .landmark-dot[aria-current="true"] { background: var(--coral); }
-html[data-palette] .family-card { border: 2px solid var(--coral); box-shadow: inset 0 0 0 5px rgba(var(--gold-rgb),.12), 0 16px 34px rgba(var(--deep-rgb),.17); }
-html[data-palette] .family-card .eyebrow,html[data-palette] .family-card small { color: var(--coral); }
-html[data-palette] .family-divider { color: var(--coral); }
-html[data-palette] .event-route::before { background-image: repeating-linear-gradient(90deg, var(--coral) 0 5px, transparent 5px 11px); }
-html[data-palette] .mehendi-stop .event-card { background: #fff9f5; }
-html[data-palette] .haldi-stop .event-card { background: #F7D9C8; border-color: var(--coral); }
-html[data-palette] .wedding-stop .event-card { background: var(--deep); border-color: var(--coral); color: var(--on-dark); }
-html[data-palette] .wedding-stop .event-card h3,html[data-palette] .wedding-stop .event-copy,html[data-palette] .wedding-stop .event-venue address { color: var(--on-dark); }
-html[data-palette] .wedding-stop .event-venue { border-color: rgba(255,154,102,.45); }
-html[data-palette] .wedding-stop .event-time,html[data-palette] .wedding-stop .event-venue > span,html[data-palette] .wedding-stop .event-venue a { color: var(--coral); }
-html[data-palette] .travel-section { background: #F3E2D7; }
-html[data-palette] .travel-links { padding: 0 18px; border: 1px solid var(--gold-pale); border-radius: 6px; background: var(--cream); box-shadow: 0 12px 30px rgba(var(--deep-rgb),.08); }
-html[data-palette] .travel-links > a > span { color: var(--rust); }
-html[data-palette] .rsvp-section { border-top: 4px solid var(--coral); border-bottom: 4px solid var(--coral); }
-html[data-palette] .contact-card { border-radius: 3px; box-shadow: 0 5px 16px rgba(var(--deep-rgb),.12); }
-html[data-palette] .contact-card strong small { display: block; margin-top: 2px; color: var(--muted); font-size: .56rem; font-weight: 500; }
-html[data-palette] .site-footer { border-top: 4px solid var(--coral); }
-html[data-palette] .scroll-top { background: var(--coral); border-color: var(--deep); }
-html[data-palette] .footer-logo { padding: 7px; border: 1px solid var(--coral); border-radius: 50%; background: var(--cream); filter: none; }
-@media (max-width: 760px) {
-  .petal-rain i { width: 8px; height: 12px; opacity: .4; }
-  html[data-palette] .hero-wash { background: linear-gradient(0deg, rgba(var(--hero-wash-rgb),1) 0%, rgba(var(--hero-wash-rgb),.96) 16%, rgba(var(--hero-wash-rgb),.62) 48%, transparent 78%); }
-  html[data-palette] .event-route::before { background: repeating-linear-gradient(180deg, var(--coral) 0 5px, transparent 5px 11px); }
-}
 @media (prefers-reduced-motion: reduce) {
   .petal-rain { display: none; }
 }

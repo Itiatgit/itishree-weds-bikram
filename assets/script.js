@@ -34,10 +34,10 @@ if(landmarkCarousel){
     {name:'Dhauli Shanti Stupa',image:'assets/dhauli.jpg',alt:'White peace stupa at Dhauli',note:'A hilltop place of peace, remembered alongside Ashokan rock edicts and the story of Kalinga.'},
     {name:'Udayagiri & Khandagiri',image:'assets/udayagiri-khandagiri.jpg',alt:'Ancient rock-cut caves at Udayagiri and Khandagiri',note:'Rock-cut caves preserve a remarkable chapter of Jain heritage just beyond the city centre.'},
     {name:'Kalinga Stadium',image:'assets/kalinga-stadium.jpg',alt:'Blue hockey turf at Kalinga Stadium',note:'The modern city comes alive beneath the lights of Bhubaneswar’s celebrated hockey arena.'},
-    {name:'Rajarani Temple',image:'assets/rajarani-temple.svg',alt:'Illustrated spire of Rajarani Temple',note:'A sculptural sandstone temple admired for its finely carved forms and calm garden setting.'},
-    {name:'Ananta Vasudeva Temple',image:'assets/ananta-vasudeva.svg',alt:'Illustrated temple form of Ananta Vasudeva',note:'A Vaishnavite shrine near Bindu Sagar, with a history and traditions all its own.'},
-    {name:'Kala Bhoomi',image:'assets/kalabhoomi.svg',alt:'Illustrated craft museum pavilion at Kala Bhoomi',note:'A living museum celebrating Odisha’s craft traditions, materials and makers.'},
-    {name:'Nandankanan',image:'assets/nandankanan.svg',alt:'Illustrated green landscape at Nandankanan',note:'A green escape on the edge of the capital, known for its zoological park and botanical gardens.'}
+    {name:'Rajarani Temple',image:'assets/rajarani.jpg',alt:'Illustrated spire of Rajarani Temple',note:'A sculptural sandstone temple admired for its finely carved forms and calm garden setting.'},
+    {name:'Ananta Vasudeva Temple',image:'assets/ananta-vasudeva.jpg',alt:'Illustrated temple form of Ananta Vasudeva',note:'A Vaishnavite shrine near Bindu Sagar, with a history and traditions all its own.'},
+    {name:'Kala Bhoomi',image:'assets/kalabhoomi.jpg',alt:'Illustrated craft museum pavilion at Kala Bhoomi',note:'A living museum celebrating Odisha’s craft traditions, materials and makers.'},
+    {name:'Nandankanan',image:'assets/nandankanan.jpg',alt:'Illustrated green landscape at Nandankanan',note:'A green escape on the edge of the capital, known for its zoological park and botanical gardens.'}
   ];
   const image=landmarkCarousel.querySelector('#landmark-image');
   const count=landmarkCarousel.querySelector('#landmark-count');
